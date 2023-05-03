@@ -10,11 +10,207 @@
    
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
-   <link rel="stylesheet" href="style.css">
    
    <script src="js/script.js" defer></script>
 
+<style>
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+.header {
+   padding: 30px;
+   text-align: center;
+   background: #262637;
+   color: white;
+   font-size: 25px;
+ }
+
+body{
+   background: #eee;
+   font-family: 'Poppins', sans-serif;
+}
+
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding:3rem 2rem;
+}
+
+.container .title{
+   font-size: 3.5rem;
+   color:#444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container .products-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+}
+
+.container .products-container .product{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+   border-radius: 100px;
+}
+
+.container .products-container .product:hover{
+   outline: .2rem solid #222;
+   outline-offset: 0;
+}
+
+.container .products-container .product img{
+   height: 25rem;
+}
+
+.container .products-container .product:hover img{
+   transform: scale(.9);
+   
+}
+
+.container .products-container .product h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:#444;
+}
+
+.container .products-container .product:hover h3{
+   color:#27ae60;
+}
+
+.container .products-container .product .price{
+   font-size: 2rem;
+   color:#444;
+}
+
+
+.small-container{
+        
+   max-width: 1000px;
+   margin: auto;
+   padding-left: 25px;
+   padding-right: 20px;
+   
+   }
+   .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   }
+   
+   .single-product{
+   margin-top: 80px;
+   }
+   
+   .small-img-row{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 5px;
+   }
+   
+   .col-2 img{
+   max-width: 100%; padding: 50px 0;
+   }
+   .small-img-col{
+   flex-basis: 24%;
+   cursor: pointer;
+   }
+   .single-product .col-2 img{
+   padding: 0;
+   }
+   .single-product .col-2{
+   padding: 20px;
+   }
+   
+   .col-2{
+   flex-basis: 50%;
+   min-width: 300px;
+   }
+   .col-2 h1{
+   font-size: 50px;
+   line-height: 60px;
+   margin: 25px 0;
+   }
+   .single-product select{
+   display: block;
+   padding: 10px;
+   margin-top: 20px;
+   }
+   .single-product h4 {
+   margin: 20px 0;
+   font-size: 22px; font-weight: bold;
+   }
+   .single-product input{
+   width: 50px;
+   height: 40px;
+   padding-left: 10px;
+   font-size: 20px;
+   margin-right: 10px;
+   border: 1px solid #ff523b;
+   }
+   
+   
+   input:focus{
+       outline: none;
+   }
+   a{
+       text-decoration: none;
+   color: #555;
+   }
+   
+   .single-product .fa{ color: #ff523b;
+   margin-left: 10px;
+   color: #555;
+   }
+   P{
+       color: #555;
+   }
+   .btn{
+   display: inline-block;
+   background: #ff523b; color: #fff;
+   padding: 8px 30px;
+   margin: 30px 0;
+   border-radius: 30px;
+   transition: background 0.5s;
+   }
+   .btn:hover{
+   background: #563434;
+   }
+
+
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+}
+
+</style>
 </head>
 
 <body>
